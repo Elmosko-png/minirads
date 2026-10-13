@@ -31,8 +31,14 @@ The curriculum's current phase is in `LEARNING_LOG.md`. Read it at the start of 
 
 ## Engineering rules (same as the real RADS codebase)
 
-- **Git:** never commit to `main`. Branches are `type/kebab-case-description` — `feature/`, `fix/`,
-  `refactor/`, `chore/`, `docs/`, `spike/`. No name prefixes. Every change goes through a pull request.
+- **Git:** two protected long-lived branches. `stage` deploys to the staging environment, `main` to production.
+  Never commit directly to either.
+  - Daily work: branch from the latest `stage`, then open a PR back into `stage`.
+  - Release: a PR from `stage` into `main`, only after the change has been checked on staging.
+  - Hotfix: branch `hotfix/…` from `main`, PR into `main`, then merge `main` back into `stage` so the fix isn't lost.
+  - Branch names are `type/kebab-case-description`: `feature/`, `fix/`, `hotfix/`, `refactor/`, `chore/`,
+    `docs/`, `spike/`. No name prefixes.
+  - Before I start work, remind me to check which branch I'm on and that it's up to date.
 - **Secrets:** never put keys, connection strings or passwords in code, config files, commits or chat. Use
   `dotnet user-secrets` locally and app settings / Key Vault in Azure. If I paste a secret, tell me to rotate it.
 - **Controllers are thin:** validate input, call a service, return a result. Business logic lives in services
