@@ -1,8 +1,22 @@
 # Learning log
 
-**Current phase:** 0 — Foundations (week 1)
+**Current phase:** 1 — Static sites (week 2) · Phase 0 review pending
 
 ---
+
+## 2026-10-15
+
+- **Built:** about, projects and contact pages for website
+- **Learned:** cp was very handy for reusing html and css
+- **Confused by:** honestly i haven't learned much about html and css so it's all kinda shaky for me
+- **Question for John:** The curriculum plans website gigs from week 3, but with AI site builders I think front-end gigs aren't worth chasing. I'd rather put that time into backend. Do you agree?
+
+## 2026-10-14
+
+- **Built:** portfolio repo with protected stage/main, the home page, and the dark espresso theme
+- **Learned:** CSS variables, so one block changes the whole theme
+- **Confused by:** -
+- **Question for John:** -
 
 ## 2026-10-13
 
