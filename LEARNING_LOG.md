@@ -4,6 +4,13 @@
 
 ---
 
+## 2026-10-16
+
+- **Built:** a "latest commits" button on my portfolio's Projects page that uses JavaScript to fetch my latest GitHub commits and display them.
+- **Learned:** the basics of HTML, CSS and JavaScript. I have a lot more to learn, but I'm starting to finally see the flow of the syntax.
+- **Confused by:** the deeper syntax of each of them. They're newish concepts to me, and a lot is in plain English, but it will take time to fully learn them.
+- **Question for John:** how much HTML, CSS and JavaScript is necessary to know as a backend developer and project manager, like future me will be?
+
 ## 2026-10-15
 
 - **Built:** about, projects and contact pages for website
