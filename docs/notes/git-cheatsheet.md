@@ -42,6 +42,7 @@ Tip: the current branch is also shown in VS Code's bottom-left status bar and in
 | `git remote -v` | lists your remotes: the nickname (like `origin`) and its URL |
 | `git remote add origin <url>` | link your local repo to a remote repo and nickname it `origin` |
 | `git push -u origin --all` | pushes all your branches to the remote repo named origin |
+| `git branch -M main` | renames the current branch to main, even if a main exists already |
 
 ## Bring in other work
 
@@ -50,6 +51,7 @@ Tip: the current branch is also shown in VS Code's bottom-left status bar and in
 | `git fetch` | downloads what's new from GitHub without changing your files or branches |
 | `git merge main` | merge main into the branch you are on |
 | `git merge --abort` | cancel the merge and revert back |
+| `git merge <branch>` (local, no PR) | the history of the branch you're on is updated to include the commits from the merged branch |
 
 ## Undo (read the warnings before running these)
 
@@ -70,6 +72,8 @@ Tip: the current branch is also shown in VS Code's bottom-left status bar and in
 | `git blame <file>` | shows who did what to each line and when they did it |
 | `git grep "<text>"` | search the repo for the string |
 | `git log -S "<text>"` | search for the commits that added or removed the string |
+| `git log -S "<text>" -m` | the `-m` lets the search include merge commits, which are ignored by default |
+| `git grep -E "<text1>\|<text2>"` | searches all tracked files for either of the texts on each side of the pipe |
 
 ## Clean up
 
@@ -77,6 +81,14 @@ Tip: the current branch is also shown in VS Code's bottom-left status bar and in
 | --- | --- |
 | `git branch -d <branch>` | deletes the branch if it's already merged |
 | `git fetch --prune` | deletes your local records of branches that were deleted from the GitHub repo |
+| `[gone]` in `git status -sb` or `git branch -vv` | the remote branch was deleted (my local copy is still there, so it's safe to delete it) |
+
+## Terminal
+
+| Command | What it does (my words) |
+| --- | --- |
+| `unzip <file>` | extracts the contents of a ZIP file into the current folder |
+| `dig +short <name> <type>` | looks up a DNS record for a name; `+short` gives a clean answer, like just the IP |
 
 ## Setup (once per machine)
 
