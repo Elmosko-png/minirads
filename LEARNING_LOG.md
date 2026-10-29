@@ -1,8 +1,29 @@
 # Learning log
 
-**Current phase:** 1 — Static sites (week 2) · Phase 0 review pending
+**Current phase:** 2 — C# and ASP.NET Core API (week 4) · Phases 0–1 done
 
 ---
+
+## 2026-10-25 (weekly review with John)
+
+- **Covered:** his full-stack diagram (browser UI ⇄ ASP.NET Core API and business logic ⇄ database, all running in Azure), how Azure works, how the back end works, and a little about how RADS fits together.
+- **His feedback:** I'm asking the right questions, working hard and thinking deeply about the topics.
+- **Direction:** full stack is where the money is and the path to project manager, so learn to read and troubleshoot front end rather than write it, and forget front-end gigs.
+- **To do:** the Microsoft Learn path "Describe Azure architecture and services".
+
+## 2026-10-22
+
+- **Built:** a static website, a deploy pipeline, and ran Lighthouse tests.
+- **Learned:** the difference between static web apps and web apps with business logic.
+- **Confused by:** - (covered in the review)
+- **Question for John:** - (answered in the review)
+
+## 2026-10-20
+
+- **Built:** with the Acme exercise, I navigated multiple merge conflicts and pushed the repo to GitHub.
+- **Learned:** to use `git log --graph --oneline --all --decorate` to see visually the order of events in the repo, where the problems came from and what the intended outcome was. Seeing the full picture, so to speak.
+- **Confused by:** - (covered in the review)
+- **Question for John:** - (answered in the review)
 
 ## 2026-10-16
 
